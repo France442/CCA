@@ -297,12 +297,12 @@ header{
 
 .nav-bar ul li a.active {
     color: #11101b;
-    background: #6ba6e9;
+    background-image: linear-gradient(to bottom right, #4158D0, #C850C0, #FFCC70);
 }
 
 .nav-bar ul li a:hover{
     color: #11101b;
-    background-color: #6ba6e9;
+    background-image: linear-gradient(to bottom right, #C850C0, #FFCC70);
 }
 
 /**********************nav bar ends****************************************/
