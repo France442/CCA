@@ -272,8 +272,9 @@ header{
     padding: 0 100px;
 }
 
+
 .club img{
-   width: 78px;
+   width: 75px;
 }
 
 .hamburger{
@@ -288,11 +289,12 @@ header{
     text-decoration: none;
     display: block;
     color: #FFF;
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px 25px;
     border-radius: 30px;
     transition: 0.2s;
     margin:0 5px; 
+    font-family: 'Kanit', sans-serif;
 }
 
 .nav-bar ul li a.active {
@@ -353,12 +355,10 @@ header{
     
 
     .nav-bar ul  li a {
+        font-size: 20px;
         margin-bottom: 20px;
         color: white;
     }
-
-
-
 
 
     #home h1{
