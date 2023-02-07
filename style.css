@@ -309,6 +309,10 @@ header{
 
 /* *******************************Mobile********************************* */
 @media (max-width:850px){
+      body{
+        background-color: #6D04FF;
+      }
+
     .hamburger{
         display: block;
         cursor: pointer;
@@ -397,8 +401,7 @@ header{
 }
 
 .card{
-    background-color: #FFF;
-    color: #1A1A2E;
+    background-color: #6D04FF;
 }
 
 
