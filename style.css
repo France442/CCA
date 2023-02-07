@@ -330,7 +330,7 @@ header{
         left: 0;
         right: 0;
         width: 100vw;
-        background-color: #5a5abb;
+        background-color: #AED3F2;
         transition: 0.2s;
         overflow: hidden;
     }
@@ -415,4 +415,4 @@ header{
     }
 }
 
-/********************************Mobile**********************************/
+/* *******************************Mobile********************************* */
