@@ -1,418 +1,559 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Outfit&family=Poppins&display=swap');
-
-*{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body{
-    background-color: #1A1A2E;
-}
-
-
-.line2{
-    padding: 3% 0 1%;
-    width: 30%;
-    margin: 3% auto;
-}
-
-
-.tex{
-    color: #FFF;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-
-/* home section */
-
-#home{
-    color: #FFF;
-    margin: 7% 5% 20%;
-}
-
-.home-text{
-    font-size: 2rem;
-    padding-top: 10%;
-    text-align: center;
-}
-
-#home h1{
-    font-size: 10rem;
-}
-
-h1{
-    color:#FFF;
-    font-family: 'Kanit', sans-serif;
-    text-align: center;
-}
-
-/***************** home Ends ******************/
-
-
-/****** footer *******/
-footer{ 
-    color: #FFF;    
-    text-align: center;
-    margin: 5% 10% 5%;
-}
-
-/****** footer-ends *******/
-
-
-
-
-/************************Services section Begins****************************************/
-.service-section h1{
-    color: #FFF;
-}
-
-.service-text{
-    padding: 0 0;
-}
-
-.service-logo{
-   padding: 8% 0 6%;
-}
-
-.service-line{
-    padding: 3% 0 1%;
-    width: 30%;
-    margin: 3% auto;
-}
-
-#service-section{
-    margin: 7% 10% 7%;
-}
-
-.card img{
-   margin: auto;
-   width:70%;
-}
-
-.card{
-    margin: 10% auto;
-    width: 100%;
-    background-color: #1A1A2E;
-    color: #FFF;
-    text-align: center;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
-
-}
-
-.card:hover{
-    box-shadow: 0 0px 5px #FFF;
-    color: #1A1A2E;
-}
-
-.card::before{
-    content: "";
-    position: absolute;
-    left: 0%;
-    top: 100%;
-    background: #FFF;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    z-index: -1;
-}
- 
-.card:hover::before{
-    top:0%;
-}
-
-
-  
-/************************Services section Ends****************************************/
-
-
-/******************************Team Section Begins***********************************/
-
- .title{
-    color: #FFF;
-    margin: 0 0 ;
-    padding:0 10px;
-}
-
-#team-section{
-    padding-bottom: 10%;
-    margin: 7% 10% 7%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2rem;
-}
-
-.profile-card{
-    position: relative;
-    width: 220px;
-    height: 220px;
-    background:white ;
-    padding: 30px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #FFF;
-    transition: 2s;
-    margin: auto;
-}
-
-.profile-card:hover{
-    border-radius: 8px;
-    height: 280px;
-}
-
-.profile-card .image{
-    position:relative ;
-    width:100% ;
-    height:80%;
-    transition: 2s;
-}
-
-.profile-card:hover .image{
-    transform: translateY(-60px);
-    transition: 2s;
-}
-
-
-.image img{
-    width: 100%;
-    transition: 2s;
-}
-
-.mem{
-    margin: auto;
-   
-}
-
-
-
-.caption{
-    text-align: center;
-    transform: translateY(-80px);
-    opacity: 0;
-    transition: 2s;
-  }
-  .profile-card:hover .caption{
-    opacity: 100%;
-    padding-bottom: 10px;
-  }
-  .caption h3{
-    font-family: 'Kanit', sans-serif;
-    font-size: 30px;
-    padding-top: 1px;
-  }
-  .caption p{
-    font-family: 'Kanit', sans-serif;
-    font-size: 16px;
-    color: #0c52a1;
-    margin: 2px 0 9px 0;
-  }
-  .caption .socials a{
-    color: #333;
-    margin-right: 8px;
-    font-size: 21px;
-    transition: 2s;
-  }
-
-p.quote{
-    color: yellowgreen;
-    line-height: 15px;
-  }
-
-  .socials a:hover{
-    color: #0c52a1;
-  }
-  
-/****************************Team section over************************************/
-
-
-
-/****************************************carousel******************************************/
-.carousel{
-    display: block;
-    margin: 7% 10% 7%;
-}
-
-.carousel-item{
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    padding: 50px;
-    transition: transform 2s ease;
-    opacity: .5s ease-out}
-
-/****************************************carousel Ends******************************************/
-
-
-
-
-/*****************contact-us******************/
-#contact-us{
-    text-align: center;
-    color: #FFF;
-    padding-top: 10px;
-    margin: 5% 10% 0;
-}
-
-
-/* navbar */
-header{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 100px;
-}
-
-
-.club img{
-   width: 75px;
-}
-
-.hamburger{
-    display: none;
-}
-
-.nav-bar ul{
-    display: flex;
-}
-
-.nav-bar ul li a {
-    text-decoration: none;
-    display: block;
-    color: #FFF;
-    font-size: 15px;
-    padding: 10px 25px;
-    border-radius: 30px;
-    transition: 0.2s;
-    margin:0 5px; 
-    font-family: 'Kanit', sans-serif;
-}
-
-.nav-bar ul li a.active {
-    color: #11101b;
-    background-image: linear-gradient(to bottom right, #4158D0, #C850C0, #FFCC70);
-}
-
-.nav-bar ul li a:hover{
-    color: #11101b;
-    background-image: linear-gradient(to bottom right, #C850C0, #FFCC70);
-}
-
-/**********************nav bar ends****************************************/
-
-/* *******************************Mobile********************************* */
-@media (max-width:850px){
-      body{
-        background-color: #363B4E;
-      }
-
-    .hamburger{
-        display: block;
-        cursor: pointer;
-    }
-    .hamburger .line{
-        width: 30px;
-        height: 3px;
-        background: #fefefe;
-        margin: 6px 6px;
-    }
-    .nav-bar{
-        height: 0;
-        position:absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        width: 100vw;
-        background-color: #404258;
-        transition: 0.2s;
-        overflow: hidden;
-    }
-    .nav-bar.active{
-        height: 600px;
-    }
-
-    .nav-bar ul{
-        display: block;
-        width: fit-content;
-        margin: 80px auto 0 auto;
-        text-align: center;
-        transition: 0.5s;
-        opacity: 0;
-    }
-
-    .nav-bar.active ul  {
-        opacity: 1;
-    }
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/8faf669c27.js" crossorigin="anonymous"></script>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="favicon-32.png" type="image/x-icon">
+    <title>Code Club Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    .nav-bar ul  li a {
-        font-size: 20px;
-        margin-bottom: 20px;
-        color: white;
-    }
+  <header>
+    <div class="club"> <a href="index.html"><img src="CCA-modified.png" alt=""></a> </div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li>
+          <a href="#home" class="active">Home</a>
+        </li>
+        <li>
+          <a href="#service-section">Services</a>
+        </li>
+        <li>
+          <a href="#team-section">Team</a>
+        </li>
+        <li>
+          <a href="#contact-us">Contact Us</a>
+        </li>
+      </ul>
+      
+    </nav>
+
+  </header>
 
 
-    #home h1{
-        font-size:350% ;
-    }
+<!-- home begins -->
 
-   .title{
-    margin-top: 70%;
-   }
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<div id="home">
+  <h1> <span id="typing">Welcome</span></h1>
+  <p class="home-text">Hello there,</p>  
+</div>
 
-   .tex{
-    padding: 0 10px;
-   }
-
-   #home{
-    margin: 30% 0;
-   }
-
-   .desktop{
-    display: none;
-}
+<!-- home end -->
 
 
-.profile-card{
+<!-- Service Section -->
+<div id="service-section">
+  <h1 class="title">What We Do</h1>
+  <hr class="line2">
+  <p class="tex">We Provide And Teach The Following Services</p>
+  <div class="container-fluid">
+<div class="row">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 m-auto">
+      <!-- Card Begins -->
+      <div class="card ">
+      <img class="service-logo" src="hacking.png" alt="Ethical hacking">
+        <div class="text">
+          <h3>Ethical hacking</h3>
+          <hr class="service-line">
+      <p class="service-text"> We Attempt To Exploit Weakness In Networks or Targeted Systems </div>
+      </div>
+    </div>
+<!-- Card Ends -->
 
-    border-radius: 8px;
-    height: 280px;
+
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 m-auto">
+<!-- Card Begins -->
+      <div class="card ">
+      <img class="service-logo" src="robot.png" alt="Robotics">
+        <div class="text">
+          <h3>Robotics</h3>
+          <hr class="service-line">
+          <p class="service-text"> Building Tech To change And Improve The Lives Of Others </div>
+      </div>
+    </div>
+<!-- Card Ends -->
+
+
+<div class="col-12 col-sm-6 col-md-6 col-lg-3 m-auto">
+  <!-- Card Begins -->
+        <div class="card ">
+        <img class="service-logo" src="System-engineering.png" alt="System">
+          <div class="text">
+            <h3>System Engineering</h3>
+            <hr class="service-line">
+            <p class="service-text"> We Perfectly Design, Set-up & Maintain A Network Of Computers </div>
+        </div>
+      </div>
+  <!-- Card Ends -->
+  
+
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 m-auto">
+<!-- Card Begins -->
+      <div class="card ">
+      <img class="service-logo" src="graphic.png" alt="Graphic Designing">
+        <div class="text">
+          <h3>Graphic Designing</h3>
+          <hr class="service-line">
+        <p class="service-text"> We Design Neat Logos, Posters, Banners, Programmes, etc. </p>  
+        </div>
+      </div>
+    </div>
+<!-- Card Ends -->
+
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 m-auto">
+<!-- Card Begins -->
+      <div class="card ">
+      <img class="service-logo" src="coding.png" alt="Web Development">
+        <div class="text">
+          <h3>Web Development</h3>
+          <hr class="service-line">
+        <p class="service-text">We Design Simple And Easy To Work With Responsive Sites</p>  
+        </div>
+      </div>
+    </div>
+<!-- Card Ends -->
+
+    </div>
+</div>
+</div>
+
+<!-- Service Section ends -->
+
+
+
+<!-- Team section begins -->
+<h1 class="title">The Team</h1>
+<hr class="line2">
+ <p class="tex"> The Great Minds Behind Everything We Do.</p>
+ <div class="desktop">
+ <div id="team-section">
+     
+   
+  <div class="mem col-lg-3 col-md-4 col-sm-6">
+    <div class="profile-card">
+     <div class="image">
+       <img src="Henry.png" alt="CEO">
+     </div>
+     <div class="caption">
+            <h3>Henry</h3>
+            <p>CEO & Founder</p>
+           <p class="quote">"Haaa, What a world"</p> 
+            <div class="socials">
+             <a href="http://www.linkedin.com/in/henry-senyegbe-agbemabiese-0a3194202" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+             <a href="https://web.facebook.com/henry.agbemabiese/" target="_blank"><i class="bi bi-facebook"></i></a>
+            </div>
+           </div>
+           </div>
+    </div>
+
+    <div class="mem col-lg-3 col-md-4 col-sm-6">
+    <div class="profile-card">
+     <div class="image">
+       <img src="Raymond.png" alt="Raymond">
+     </div>
+     <div class="caption">
+            <h3>Raymond</h3>
+            <p>Graphic Designer</p>
+           <p class="quote">"I Accept your challenge"</p> 
+            <div class="socials">
+             <a href="https://www.linkedin.com/in/raymond-asante-402b17250" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+             <a href="https://instagram.com/raygraphicsisland?igshid=YmMyMTA2M2Y=" target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
+     </div>
+     </div>
+    </div>
+
+  <div class="mem col-lg-3 col-md-4 col-sm-6">
+    <div class="profile-card">
+     <div class="image">
+       <img src="Francis.png" alt="CEO">
+     </div>
+     <div class="caption">
+            <h3>Francis</h3>
+            <p>Front-end Developer</p>
+           <p class="quote">"I am Tired"</p> 
+            <div class="socials">
+             <a href="https://www.facebook.com/france.asare?mibextid=ZbWKwL" target="_blank"><i class="bi bi-facebook"></i></a>
+             <a href="https://instagram.com/asarefrance?igshid=NTA5ZTk1NTc=" target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
+</div>
+    </div>
+     </div>
+   
+
+     <div class="mem col-lg-3 col-md-4 col-sm-6">
+     <div class="profile-card">
+      <div class="image">
+        <img src="Yaw-modified.png" alt="CEO">
+      </div>
+      <div class="caption">
+             <h3>Yaw</h3>
+             <p>3D Artist </p>
+            <p class="quote">"Life is a mess..."</p> 
+             <div class="socials">
+              <a href="http://www.linkedin.com/in/yaw-osei-8a5710219" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://t.me/Bond_theatrics" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+             </div>
+      </div>
+     </div>
+     </div>
+
+     <div class="mem col-lg-3 col-md-4 col-sm-6">
+     <div class="profile-card">
+      <div class="image">
+        <img src="Jude.png" alt="Jude">
+      </div>
+      <div class="caption">
+             <h3>Jude</h3>
+             <p>Robotics Engineer</p>
+            <p class="quote">"Life is a journey"</p> 
+             <div class="socials">
+              <a href="https://www.linkedin.com/in/jude-osei-0a8117254?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bp834TTBVQPu9d%2BmFpby3sA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/phantom_phiruz/" target="_blank"><i class="bi bi-instagram"></i></a>
+             </div>
+      </div>
+     </div> 
+     </div>
+     
+     <div class="mem col-lg-3 col-md-4 col-sm-6">
+     <div class="profile-card">
+       <div class="image">
+         <img src="Philemon-modified.png" alt="CEO">
+       </div>
+       <div class="caption">
+              <h3>Philemon</h3>
+              <p>Web Developer</p>
+             <p class="quote">"The Taste of Freedom"</p> 
+              <div class="socials">
+               <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+               <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+              </div>
+     </div>
+      </div> 
+      </div>
+
+
+      
+     <div class="mem col-lg-3 col-md-4 col-sm-6">
+      <div class="profile-card">
+       <div class="image">
+         <img src="Samuel-modified.png" alt="sam">
+       </div>
+       <div class="caption">
+              <h3>Samuel</h3>
+              <p>Systems Engineer</p>
+             <p class="quote">"Being Silent Says A Lot"</p> 
+              <div class="socials">
+               <a href="https://www.facebook.com/profile.php?id=100070007042207" target="_blank"><i class="bi bi-facebook"></i></a>
+               <a href="https://instagram.com/lhord_atthram?igshid=ZDdkNTZiNTM=" target="_blank"><i class="bi bi-instagram"></i></a>
+              </div>
+       </div>
+      </div>
+      </div>
+ 
+
+
+      <div class="mem col-lg-3 col-md-4 col-sm-6">
+       <div class="profile-card">
+        <div class="image">
+          <img src="Joana-modified.png" alt="CEO">
+        </div>
+        <div class="caption">
+               <h3>Joana
+               <p>Robotics Engineer</p>
+              <p class="quote">"Art is An Imagination"</p> 
+               <div class="socials">
+                <a href="https://www.facebook.com/profile.php?id=100087035113287&mibextid=ZbWKwL" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/joana-jan-kumi-314b77261" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+      </div>
+      </div>
+       </div>  
+
+
+       <div class="mem col-lg-3 col-md-4 col-sm-6">
+         <div class="profile-card">
+          <div class="image">
+            <img src="Vanessa-modified.png" alt="CEO">
+          </div>
+          <div class="caption">
+                 <h3>Vanessa</h3>
+                 <p>Marketing Manager</p>
+                <p class="quote">"Hey"</p> 
+                 <div class="socials">
+                  <a href="https://twitter.com/ayebea00?t=68jBaq6mqbBrmVyxnHMyFA&s=08" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://instagram.com/_.nessyyy?igshid=ZDdkNTZiNTM=" target="_blank"><i class="bi bi-instagram"></i></a>
+                 </div>
+          </div>
+         </div>
+       </div>
+      </div>
+      </div>
+  
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="mem col-lg-3 col-md-4 col-sm-6">
+          <div class="profile-card">
+           <div class="image">
+             <img src="Henry.png" alt="CEO">
+           </div>
+           <div class="caption">
+                  <h3>Henry</h3>
+                  <p>CEO & Founder</p>
+                 <p class="quote">"Haaa, What a world"</p> 
+                  <div class="socials">
+                   <a href="http://www.linkedin.com/in/henry-senyegbe-agbemabiese-0a3194202" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                   <a href="https://web.facebook.com/henry.agbemabiese/" target="_blank"><i class="bi bi-facebook"></i></a>
+                  </div>
+                 </div>
+                 </div>
+          </div>
+      </div>
+
+      <div class="carousel-item">
+       
+        <div class="mem col-lg-3 col-md-4 col-sm-6">
+          <div class="profile-card">
+           <div class="image">
+             <img src="Raymond.png" alt="Raymond">
+           </div>
+           <div class="caption">
+                  <h3>Raymond</h3>
+                  <p>Graphic Designer</p>
+                 <p class="quote">"I Accept your challenge"</p> 
+                  <div class="socials">
+                   <a href="https://www.linkedin.com/in/raymond-asante-402b17250" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                   <a href="https://instagram.com/raygraphicsisland?igshid=YmMyMTA2M2Y=" target="_blank"><i class="bi bi-instagram"></i></a>
+                  </div>
+           </div>
+           </div>
+          </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="mem col-lg-3 col-md-4 col-sm-6">
+          <div class="profile-card">
+           <div class="image">
+             <img src="Francis.png" alt="CEO">
+           </div>
+           <div class="caption">
+                  <h3>Francis</h3>
+                  <p>Front-end Developer</p>
+                 <p class="quote">"I am Tired"</p> 
+                  <div class="socials">
+                   <a href="https://www.facebook.com/france.asare?mibextid=ZbWKwL" target="_blank"><i class="bi bi-facebook"></i></a>
+                   <a href="https://instagram.com/asarefrance?igshid=NTA5ZTk1NTc=" target="_blank"><i class="bi bi-instagram"></i></a>
+                  </div>
+      </div>
+          </div>
+           </div>
+      </div>
+
+      <div class="carousel-item">
+       
+        <div class="mem col-lg-3 col-md-4 col-sm-6">
+          <div class="profile-card">
+           <div class="image">
+             <img src="Yaw-modified.png" alt="CEO">
+           </div>
+           <div class="caption">
+                  <h3>Yaw</h3>
+                  <p>3D Modeler</p>
+                 <p class="quote">"Life is a mess..."</p> 
+                  <div class="socials">
+                   <a href="http://www.linkedin.com/in/yaw-osei-8a5710219" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                   <a href="https://t.me/Bond_theatrics" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                  </div>
+           </div>
+          </div>
+          </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="mem col-lg-3 col-md-4 col-sm-6">
+          <div class="profile-card">
+           <div class="image">
+             <img src="Jude.png" alt="Jude">
+           </div>
+           <div class="caption">
+                  <h3>Jude</h3>
+                  <p>Robotics Engineer</p>
+                 <p class="quote">"Life is a journey"</p> 
+                  <div class="socials">
+                   <a href="https://www.linkedin.com/in/jude-osei-0a8117254?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bp834TTBVQPu9d%2BmFpby3sA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                   <a href="https://www.instagram.com/phantom_phiruz/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  </div>
+           </div>
+          </div> 
+          </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="mem col-lg-3 col-md-4 col-sm-6">
+          <div class="profile-card">
+            <div class="image">
+              <img src="Philemon-modified.png" alt="CEO">
+            </div>
+            <div class="caption">
+                   <h3>Philemon</h3>
+                   <p>Web Developer</p>
+                  <p class="quote">"The Taste of Freedom"</p> 
+                   <div class="socials">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                   </div>
+          </div>
+           </div> 
+           </div>
+      </div>
+
+
+      <div class="carousel-item">     
+     <div class="mem col-lg-3 col-md-4 col-sm-6">
+      <div class="profile-card">
+       <div class="image">
+         <img src="Samuel-modified.png" alt="CEO">
+       </div>
+       <div class="caption">
+              <h3>Samuel</h3>
+              <p>Systems Engineer</p>
+             <p class="quote">"Being Silent Says A Lot"</p> 
+              <div class="socials">
+               <a href="https://www.facebook.com/profile.php?id=100070007042207" target="_blank"><i class="bi bi-facebook"></i></a>
+               <a href="https://instagram.com/lhord_atthram?igshid=ZDdkNTZiNTM=" target="_blank"><i class="bi bi-instagram"></i></a>
+              </div>
+       </div>
+      </div>
+      </div>
+      </div>
+ 
+
+      <div class="carousel-item">
+        <div class="mem col-lg-3 col-md-4 col-sm-6">
+          <div class="profile-card">
+           <div class="image">
+             <img src="Joana-modified.png" alt="CEO">
+           </div>
+           <div class="caption">
+                  <h3>Joana
+                  <p>Robotics Engineer</p>
+                 <p class="quote">"Art is An Explosion"</p> 
+                  <div class="socials">
+                   <a href="https://www.facebook.com/profile.php?id=100087035113287&mibextid=ZbWKwL" target="_blank"><i class="bi bi-facebook"></i></a>
+                   <a href="https://www.linkedin.com/in/joana-jan-kumi-314b77261" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+         </div>
+         </div>
+          </div>  
+      </div>
+
+      <div class="carousel-item">
+         <div class="mem col-lg-3 col-md-4 col-sm-6">
+          <div class="profile-card">
+           <div class="image">
+             <img src="Vanessa-modified.png" alt="CEO">
+           </div>
+           <div class="caption">
+                  <h3>Vanessa</h3>
+                  <p>Marketing Manager</p>
+                 <p class="quote">"Hey"</p> 
+                  <div class="socials">
+                   <a href="https://twitter.com/ayebea00?t=68jBaq6mqbBrmVyxnHMyFA&s=08" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                   <a href="https://instagram.com/_.nessyyy?igshid=ZDdkNTZiNTM=" target="_blank"><i class="bi bi-instagram"></i></a>
+                  </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- team section ends -->
+                         
+  
+  <div id="contact-us"> 
+    <h1 class="title">Get In Touch</h1>
+    <hr class="line2">
+<p>Feel Free To Reach Out, We Would Love To Hear From You <br>Thank you for visiting Code Club Academy </p>
+ <a href="mailto:codeclubacademy@gmail.com"><button type="button" class="mail btn btn-outline-info btn-lg">codeclubacademy@gmail.com</button></a> 
+  <footer>
+    <p class="copy">© 2023 CodeClub Academy </p>
+  </footer>
+</div>
+
+
+  
+
+  <!-- typing Animation -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+ 
+ 
+
+  <script>
+     function sleep(ms) {
+      return new Promise ((resolve) => setTimeout(resolve, ms));
+     }
+     const phrases = ["Welcome","Akwaaba","Bienvenue","Woezɔ̃","Bienvenu",];
+     const el = document.getElementById("typing");
+    
+     let sleepTime = 70;
+
+     let curPhraseIndex = 0;
+      
+     const writeLoop = async () => {
+      while (true){
+             let curWord = phrases[curPhraseIndex];
+               
+             for (let i = 0; i < curWord.length; i++){
+              el.innerText = curWord.substring(0,i + 1);
+              await sleep(sleepTime);
+            }
+
+             await sleep(sleepTime * 10);
+
+             for (let i = curWord.length; i > 0; i--){
+              el.innerText = curWord.substring(0,i - 1);
+              await sleep(sleepTime);
+            }
+
+            await sleep(sleepTime * 5);
+
+            if (curPhraseIndex === phrases.length - 1){
+              curPhraseIndex = 0;
+            } else {
+              curPhraseIndex++;
+            }
+            }
+
+     };
+
+     writeLoop();
+
+
+     hamburger = document.querySelector(".hamburger");
+     hamburger.onclick = function() {
+         navBar = document.querySelector(".nav-bar");
+         navBar.classList.toggle("active")       
      }
 
-.profile-card .image{
-    position:relative ;
-    width:100% ;
-    height:80%; 
-    transform: translateY(-60px);
-}
+</script>
 
-.profile-card .caption{
-    opacity: 100%;
-    padding-bottom: 10px;
-}
-
-.card{
-    background-color: #363B4E;
-}
-
-
-}
-
-
-
-@media (min-width:850px){
-    .carousel{
-        display: none;
-    }
-}
-
-/* *******************************Mobile********************************* */
+<!-- typing Animation ends -->
+  
+ </body>
+</html>
